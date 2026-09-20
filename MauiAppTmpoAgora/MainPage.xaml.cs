@@ -20,6 +20,7 @@ namespace MauiAppTmpoAgora
                     await DisplayAlertAsync("Sem internet","Sem acesso à internet. Reconecte-se para utilizar o aplicativo!","OK");
 
                     return;
+
                 }
                 if (!string.IsNullOrEmpty(txt_cidade.Text)) 
                 {
