@@ -5,8 +5,6 @@ namespace MauiAppTmpoAgora
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
@@ -19,7 +17,7 @@ namespace MauiAppTmpoAgora
 
                 if (Connectivity.Current.NetworkAccess != NetworkAccess.Internet)
                 {
-                    await DisplayAlertAsync("Sem internet","Não foi possível realizar esta ação porque você está sem conexão com a internet.","OK");
+                    await DisplayAlertAsync("Sem internet","Sem acesso à internet. Reconecte-se para utilizar o aplicativo!","OK");
 
                     return;
                 }
